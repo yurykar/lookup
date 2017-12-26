@@ -1,0 +1,5 @@
+- name: Test_lookup
+  hosts: localhost
+  tasks:
+    - debug: msg="{{lookup('os_info') }}"
+
